@@ -9,7 +9,7 @@ const P = new Pokedex();
 
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.dirname(__filename, 'public');
 
 app.get('/api/pokemon/:identifier', async (req, res) => {
     try {
